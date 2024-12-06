@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Settings</title>
+  <link rel="stylesheet" href="settings.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Keuangan Undiknas</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="dashboard_mahasiswa.html" id="dashboard-link">
+              <i class="fas fa-home"></i>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="history.html" id="history-link">
+              <i class="fas fa-plus"></i>
+              Tambah Laporan
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" id="settings-link">
+              <i class="fas fa-cog"></i>
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="login.html" id="logout-link">
+              <i class="fas fa-sign-out-alt"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </nav>    
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <div class="user-info">
+          <span class="user-name">Angga</span>
+          <span class="user-role">Mahasiswa</span>
+        </div>
+      </header>
+
+      <section class="content">
+        <h1>General Settings</h1>
+        <div class="settings-container">
+          <div class="upload-section">
+            <div class="upload-image">
+              <img src="placeholder.png" alt="Profile" class="upload-preview">
+            </div>
+            <button class="upload-btn">Upload Image</button>
+          </div>
+          <form class="settings-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" value="">
+              </div>
+              <div class="form-group">
+                <label for="nim">NIM</label>
+                <input type="text" id="nim" value="">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="">
+              </div>
+              <div class="form-group">
+                <label for="faculty">Fakultas</label>
+                <input type="text" id="faculty" value="">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">No Telepon</label>
+                <input type="text" id="phone" value="">
+              </div>
+              <div class="form-group">
+                <label for="major">Jurusan</label>
+                <input type="text" id="major" value="">
+              </div>
+            </div>
+            <button type="submit" class="btn-save">Save</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1>Login Account</h1>
+      <p>Web Laporan Keuangan Undiknas Denpasar</p>
+      <form>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <a href="forget_password.html" class="forgot-password">Forgot Password?</a>
+        </div>
+        <div class="form-group remember-me">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember Password</label>
+        </div>
+        <button type="submit" class="btn" id="signInButton">Sign In</button>
+      </form>
+      <p class="create-account">
+        Don't have an account? <a href="register.html">Create Account</a>
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

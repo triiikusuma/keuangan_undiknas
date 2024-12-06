@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Mahasiswa</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Keuangan Undiknas</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="dashboard_mahasiswa.html" id="dashboard-link">
+              <i class="fas fa-home"></i>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="history.html" id="history-link">
+              <i class="fas fa-plus"></i>
+              Tambah Laporan
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" id="settings-link">
+              <i class="fas fa-cog"></i>
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="login.html" id="logout-link">
+              <i class="fas fa-sign-out-alt"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </nav>    
+    </aside>
+
+    <!-- Dashboard Mahasiswa -->
+<main class="main-content">
+  <header class="header">
+    <input type="text" class="search-bar" placeholder="Search...">
+    <div class="user-info">
+      <span class="user-name">Angga</span>
+      <span class="user-role">Mahasiswa</span>
+    </div>
+  </header>
+  
+    <section class="cards">
+      <div class="card">
+        <h3>Total Antrean</h3>
+        <p>10</p>
+      </div>
+      <div class="card">
+        <h3>Antrean Sekarang</h3>
+        <p>9</p>
+      </div>
+      <div class="card">
+        <h3>Antrean Selanjutnya</h3>
+        <p>10</p>
+      </div>
+      <div class="card">
+        <h3>Ambil Nomor Antrean</h3>
+        <p>11</p>
+      </div>
+      <script src="script.js"></script>
+    </section>
+  
+    <section class="history">
+      <h2>History Laporan</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>No Laporan</th>
+            <th>Tipe Laporan</th>
+            <th>Bukti Transaksi</th>
+            <th>Keterangan</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>Pembayaran SPP</td>
+            <td>File</td>
+            <td>Gagal Sinkron</td>
+            <td class="status completed">Completed</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>Pembayaran Skripsi</td>
+            <td>File</td>
+            <td>Gagal Sinkron</td>
+            <td class="status processing">Processing</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>Pembayaran Wisuda</td>
+            <td>File</td>
+            <td>Pembayaran Manual</td>
+            <td class="status unprocessed">Unprocessed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  

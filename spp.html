@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Laporan</title>
+  <link rel="stylesheet" href="spp.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Keuangan Undiknas</h2>
+      <nav>
+        <ul>
+          <li><a href="dashboard_mahasiswa.html" id="dashboard-link"><i class="fas fa-home"></i> Dashboard</a></li>
+          <li><a href="history.html" id="history-link" class="active"><i class="fas fa-plus"></i> Tambah Laporan</a></li>
+          <li><a href="settings.html" id="settings-link"><i class="fas fa-cog"></i> Settings</a></li>
+          <li><a href="login.html" id="logout-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <div class="user-info">
+          <span class="user-name">Angga</span>
+          <span class="user-role">Mahasiswa</span>
+        </div>
+      </header>
+
+      <section class="report-section">
+        <h2>Laporan Kamu</h2>
+        <div class="form-group">
+          <label for="jenis-laporan">Jenis Laporan</label>
+          <select id="jenis-laporan">
+            <option>Pembayaran SPP</option>
+            <option>Dispensasi Pembayaran</option>
+            <option>Beasiswa</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="upload-bukti">Upload Bukti Pembayaran</label>
+          <input type="file" id="upload-bukti">
+        </div>
+        <div class="form-group">
+          <label for="keluhan">Ketik Keluhan</label>
+          <textarea id="keluhan" placeholder="Masukkan Keluhan..."></textarea>
+        </div>
+        <button type="button" id="submit-button">Kirim</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

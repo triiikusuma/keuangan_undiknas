@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4880FF; /* Warna latar biru */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+  
+  /* Container for login box */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Login Box */
+  .login-box {
+    background-color: #ffffff; /* Warna kotak login */
+    border-radius: 16px; /* Sudut melengkung lebih besar */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih halus */
+    padding: 40px 30px;
+    width: 400px; /* Lebar kotak login */
+    text-align: center; /* Semua teks di tengah */
+  }
+  
+  /* Heading Login */
+  .login-box h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .login-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Sudut melengkung input */
+    margin-top: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  /* Link Lupa Password */
+  .forgot-password {
+    font-size: 12px;
+    color: #4a90e2;
+    text-decoration: none;
+    float: right;
+    margin-top: 5px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Checkbox "Remember Password" */
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .remember-me input {
+    margin-right: 8px;
+  }
+  
+  /* Tombol Login */
+  .btn {
+    background-color: #4a90e2;
+    color: white;
+    font-size: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #357abd;
+  }
+  
+  /* Text Create Account */
+  .create-account {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .create-account a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .create-account a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /*HALAMAN FORGET-PASSWORD */
+.forget-password-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px 30px;
+  width: 400px;
+  text-align: center;
+}
+
+.forget-password-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.forget-password-box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.forget-password-box .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.forget-password-box label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.forget-password-box input[type="email"] {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.forget-password-box input[type="email"]:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Button */
+.forget-password-box .btn {
+  background-color: #4a90e2;
+  color: white;
+  font-size: 14px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forget-password-box .btn:hover {
+  background-color: #357abd;
+}
+
+/* HALAMAN REGISTER */
+/* Container Form Register */
+.container_register {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px; /* Sudut membulat */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Shadow lebih kuat */
+  text-align: center;
+}
+
+/* Heading dan Subtitle */
+h1 {
+  font-size: 26px; /* Ukuran font lebih besar */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Jarak antar elemen form */
+}
+
+input {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Sudut input membulat */
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4880FF;
+  outline: none;
+  box-shadow: 0 0 6px rgba(72, 128, 255, 0.5); /* Efek glow */
+}
+
+/* Tombol Sign Up */
+button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4880FF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3369CC;
+}
+
+/* Link Login */
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #4880FF;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
